@@ -81,6 +81,8 @@ function change3(){
 }
 </script>
 
+
+
 <script>
 			$(document).ready( function(){
 				$("#yes").click( function(){
@@ -116,6 +118,28 @@ function change3(){
 					// $("body").css("background-image","url(https://i.imgur.com/dq3cEDT.gif)");
 					
 				});
+				$("#gf").click( function(){
+					f=Math.floor(Math.random()*5);
+					if(f==0)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/SqbjVN2.png";
+
+					}else if(f==1)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/eOvXMsm.jpg";
+					}else if(f==2)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/N4klqVr.jpg";
+					}else if(f==3)
+					{
+						document.getElementById("gf1").src="https://i.imgur.com/RVhIJGi.png";
+					}else if(f==4)
+					{
+						document.getElementById("gf1").src="";
+					}
+					
+					
+				});
 			});
   </script>
 
@@ -125,7 +149,7 @@ function change3(){
 <body class="">
 	<style>
 	.darkness{
-	background-color: black;
+	background-color: blue;
 }
 	.fishing{
 		background-image:url(https://i.imgur.com/dq3cEDT.gif)
@@ -139,6 +163,8 @@ function change3(){
         margin-right: 200px;
         }
     </style>
+    <a href="#spd">黑衣劍士</a>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="#fire">火山大隊長</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="#rubber"> 超強彈力橡皮人</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -151,7 +177,8 @@ function change3(){
  	<button id="star">開始星爆</button>
         
     <p></p>
-    
+    	<button id="gf">點這個按鈕看你抽到哪個女友==</button>
+    	<img id="gf1" src="https://i.imgur.com/vwtmSHs.jpg" alt="不是圖死了 是你沒有女友">
         <p id="spd">慢慢俠</p>
         <img id="spd1" src="https://33.media.tumblr.com/tumblr_ma97m64In61rfpxhzo6_400.gif" onclick="change0()">
         <p id="fire">火山大隊長</p>
