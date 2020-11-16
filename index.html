@@ -2,7 +2,8 @@
     <meta charset="utf-8">
     <title>personalpage</title>
 
-    <script>
+    
+<script>
 	a=0;
 	function change0(){
 	  a++;
@@ -28,6 +29,24 @@
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js">
 </script>
+<script>
+	cnt_hbd=0;
+	function angel(){
+		cnt_hbd%=2;
+  	if(cnt_hbd==0)
+  	{
+  		$("hbd1117").show();
+  	}else if(cnt_hbd==1)
+  	{
+  		$("hbd1117").hide();
+  	}
+    
+    cnt_hbd++;
+
+	}
+;
+</script>
+
 <script>
 b=0;
 function change1(){
@@ -85,6 +104,7 @@ function change3(){
 
 <script>
 			$(document).ready( function(){
+                 
 				$("#yes").click( function(){
 					$("body").removeClass("darkness");
 					$("body").removeClass("fishing");
@@ -146,7 +166,7 @@ function change3(){
 
 
   </head>
-<body class="">
+<body class="" style="">
 	<style>
 	.darkness{
 	background-color: black;
@@ -175,17 +195,22 @@ function change3(){
  	<button id="no">背景變白</button>
  	<button id="fish">釣魚</button>
  	<button id="star">開始星爆</button>
+
+<span style="color:white;" onclick="angel()"><hbd>生日快樂 點我</hbd></span>
         
-    <p></p>
+    <p style=""></p>
     	<button id="gf">點這個按鈕看你抽到哪個女友==</button>
-    	<img id="gf1" src="https://i.imgur.com/vwtmSHs.jpg" alt="不是圖死了 是你沒有女友">
-        <p id="spd">慢慢俠</p>
-        <img id="spd1" src="https://33.media.tumblr.com/tumblr_ma97m64In61rfpxhzo6_400.gif" onclick="change0()">
-        <p id="fire">火山大隊長</p>
+    	<img id="gf1" src="" alt="不是圖死了 是你沒有女友">
+<p style=""></p>
+<hbd1117 style="display: none;">生日快樂 顏心妤</hbd1117>
+        <p id="spd" style="">慢慢俠</p>
+        <img src="https://33.media.tumblr.com/tumblr_ma97m64In61rfpxhzo6_400.gif" id="spd1" onclick="change0()">
+        <p id="fire" style="">火山大隊長</p>
         <img id="fire1" height="194" width="300" src="https://i.imgur.com/0OEdK0E.png" onclick="change1()">
-        <p id="rubber">超強彈力橡皮人</p>
+        <p id="rubber" style="">超強彈力橡皮人</p>
         <img id="rubber1" src="https://i.imgur.com/76egmJX.png" width="259" height="194" onclick="change2()">
-        <p id="invisible">隱形美眉</p>
+        <p id="invisible" style="">隱形美眉</p>
         <img id="invisible1" height="194" width="259" src="https://i.imgur.com/VY5BcjC.png" onclick="change3()"><a href="#home">回到最上面點我</a>
+
 
 </body></html>
