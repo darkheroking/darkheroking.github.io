@@ -109,6 +109,7 @@ function change3(){
 					$("body").removeClass("darkness");
 					$("body").removeClass("fishing");
 					$("body").removeClass("starburst");
+                    $("hbd1117").addClass("whi");
 					// $("body").css("background-color","black");
 					$("body").addClass("darkness");
 					// $("body").css("background-image","url(https://i.imgur.com/dq3cEDT.gif)");
@@ -120,7 +121,7 @@ function change3(){
 					$("body").removeClass("darkness");
 					$("body").removeClass("fishing");
 					$("body").removeClass("starburst");
-					
+					$("hbd1117").removeClass("whi");
 				});
 				$("#star").click( function(){
 					$("body").removeClass("darkness");
@@ -168,6 +169,9 @@ function change3(){
   </head>
 <body class="" style="">
 	<style>
+    .whi{
+        color: white;
+    }
 	.darkness{
 	background-color: black;
 }
@@ -195,14 +199,16 @@ function change3(){
  	<button id="no">背景變白</button>
  	<button id="fish">釣魚</button>
  	<button id="star">開始星爆</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 
 <span style="color:white;" onclick="angel()"><hbd>生日快樂 點我</hbd></span>
         
     <p style=""></p>
-    	<button id="gf">點這個按鈕看你抽到哪個女友==</button>
-    	<img id="gf1" src="" alt="不是圖死了 是你沒有女友">
+    	<button id="gf">(可能會重複)點這個按鈕看你抽到哪個女友==</button>
+    	<img alt="不是圖死了 是你沒有女友" src="https://i.imgur.com/vwtmSHs.jpg" id="gf1">
 <p style=""></p>
-<hbd1117 style="display: none;">生日快樂 顏心妤</hbd1117>
+<hbd1117 style="display: none;" class="">生日快樂 顏心妤</hbd1117>
 <p></p>
 <p>以下點擊圖片的話 圖片跟文字皆會發生改變(要等一下)</p>
         <p id="spd" style="">慢慢俠</p>
@@ -213,6 +219,7 @@ function change3(){
         <img id="rubber1" src="https://i.imgur.com/76egmJX.png" width="259" height="194" onclick="change2()">
         <p id="invisible" style="">隱形美眉</p>
         <img id="invisible1" height="194" width="259" src="https://i.imgur.com/VY5BcjC.png" onclick="change3()"><a href="#home">回到最上面點我</a>
+
 
 
 
